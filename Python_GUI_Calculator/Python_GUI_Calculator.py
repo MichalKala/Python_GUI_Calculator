@@ -214,7 +214,7 @@ def buttonsqrt_Handle():
     display.configure(state="readonly")
 
 buttonsqrt = Button(gui, text = "Squared root", background = 'white', height=btnheight, width=12, command=buttonsqrt_Handle)
-buttonsqrt.place(x=400, y=240)
+buttonsqrt.place(x=300, y=120)
 
 def buttonpowered_Handle():
     global firstnmb
