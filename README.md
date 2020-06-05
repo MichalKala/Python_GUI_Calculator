@@ -1,11 +1,7 @@
 # Python_GUI_Calculator
 
-First real application - calculator
+This is my first "real" application - a simple GUI calculator
 
-It is not finished yet, looks pretty bad, but it works :) I started with simple operations, divide, multiply, plus and minus.
+It was fun to code and I learned quite a lot of basic stuff while figuring out how to get all those buttons to do what I want.
 
-I actually thought this will be piece of cake but figuring out the buttons became little bit challenging.
 
-I will continue to improve this app in next days.
-
-UPDATE 5.6.2020 - three new buttons added - Squared, Square root and Powered
