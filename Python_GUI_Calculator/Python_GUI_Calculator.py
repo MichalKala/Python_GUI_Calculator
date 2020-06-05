@@ -1,3 +1,5 @@
+#import math operations - for square root
+import math
 #Create basic window
 from tkinter import *
 gui = Tk()
@@ -182,5 +184,37 @@ def buttonclear_Handle():
 buttonclear = Button(gui, text = "C", background = 'white', height=btnheight, width=btnwidth, command=buttonclear_Handle)
 buttonclear.place(x=60, y=240)
 
-#Display the window
+def buttonsquare_Handle():
+    global firstnmb
+    global squarednumber
+    squarednumber = 0
+    firstnmb = display.get()
+    firstnmb = float(firstnmb)
+    squarednumber = float(squarednumber)
+    squarednumber = firstnmb ** 2
+    display.configure(state="normal")
+    display.delete(0, "end")
+    display.insert("end", squarednumber)
+    display.configure(state="readonly")
+
+buttonsquare = Button(gui, text = "Squared", background = 'white', height=btnheight, width=8, command=buttonsquare_Handle)
+buttonsquare.place(x=300, y=240)
+
+def buttonsqrt_Handle():
+    global firstnmb
+    global squaredroot
+    squaredroot = 0
+    firstnmb = display.get()
+    firstnmb = float(firstnmb)
+    squaredroot = float(squaredroot)
+    squaredroot = math.sqrt(firstnmb)
+    display.configure(state="normal")
+    display.delete(0, "end")
+    display.insert("end", squaredroot)
+    display.configure(state="readonly")
+
+buttonsqrt = Button(gui, text = "Squared root", background = 'white', height=btnheight, width=12, command=buttonsqrt_Handle)
+buttonsqrt.place(x=400, y=240)
+
+#Display the window until you close it
 gui.mainloop()
