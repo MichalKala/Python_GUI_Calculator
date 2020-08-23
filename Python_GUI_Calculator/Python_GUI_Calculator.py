@@ -197,7 +197,7 @@ def buttonsquare_Handle():
     display.insert("end", squarednumber)
     display.configure(state="readonly")
 
-buttonsquare = Button(gui, text = "Squared", background = 'white', height=btnheight, width=8, command=buttonsquare_Handle)
+buttonsquare = Button(gui, text = "Squared", background = 'white', height=btnheight, width=12, command=buttonsquare_Handle)
 buttonsquare.place(x=300, y=240)
 
 def buttonsqrt_Handle():
@@ -229,7 +229,7 @@ def buttonpowered_Handle():
     display.insert("end", powerednumber)
     display.configure(state="readonly")
 
-buttonpowered = Button(gui, text = "Powered", background = 'white', height=btnheight, width=8, command=buttonpowered_Handle)
+buttonpowered = Button(gui, text = "Powered", background = 'white', height=btnheight, width=12, command=buttonpowered_Handle)
 buttonpowered.place(x=300, y=180)
 
 #Display the window until you close it
